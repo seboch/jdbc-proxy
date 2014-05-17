@@ -105,7 +105,6 @@ public class OpenResourceTrackerTest {
 
 		CreationInfo<Connection> creationInfo = tracker.getOpenConnections()
 				.get(mockConnection);
-		System.out.println(creationInfo.toString());
 		checkStack(creationInfo.getCreationStackTrace());
 	}
 
